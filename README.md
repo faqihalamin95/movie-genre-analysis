@@ -84,6 +84,8 @@ WHERE CAST(release_year AS INTEGER) >= 2017
 GROUP BY genre
 ORDER BY total_popularity DESC
 LIMIT 10;
+```
+---
 
 ## 📊 Key Insights
 
