@@ -54,7 +54,7 @@ Phase-1-project/
 │ └── clean_movies.py # Python script for the transformation logic
 │
 └── README.md
-
+```
 ---
 
 ## 🗄️ Database Schema (SQLite)
@@ -68,7 +68,7 @@ The data is stored in the `movies` table with the following structure:
 | release_date  | TEXT | Full release date (ISO format) |
 | popularity    | TEXT | Popularity score (to be cast during aggregation) |
 | release_year  | TEXT | Extracted year for indexing/filtering |
-```
+
 ---
 
 ## 📊 Analytical Query & Results
