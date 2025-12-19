@@ -40,6 +40,7 @@ The project follows a **standard local pipeline architecture**:
 ---
 
 ## 📂 Project Structure
+```text
 Phase-1-project/
 │
 ├── data/
@@ -67,7 +68,7 @@ The data is stored in the `movies` table with the following structure:
 | release_date  | TEXT | Full release date (ISO format) |
 | popularity    | TEXT | Popularity score (to be cast during aggregation) |
 | release_year  | TEXT | Extracted year for indexing/filtering |
-
+```
 ---
 
 ## 📊 Analytical Query & Results
