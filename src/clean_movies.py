@@ -18,7 +18,7 @@ df = df.dropna(subset=['release_year'])
 
 # 4. Filter last 5 years
 # =========================
-df = df[df['release_year'] >= 2020]
+df = df[df['release_year'] >= 2017]
 
 # 5. Clean genre
 # =========================
