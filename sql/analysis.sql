@@ -2,14 +2,13 @@
 -- =====================================
 
 -- Table definition
-DROP TABLE IF EXISTS movies;
 
 CREATE TABLE IF NOT EXISTS movies (
     title TEXT,
     genre TEXT,
-    release_date TEXT,
-    popularity TEXT,
-    release_year TEXT
+    release_date DATE,
+    popularity REAL,
+    release_year INTEGER
 );
 
 -- Core analysis: most popular genres
@@ -22,9 +21,9 @@ CREATE TABLE IF NOT EXISTS movies (
 SELECT
     genre,
     COUNT(*) AS total_movies,
-    SUM(CAST(popularity AS INTEGER)) AS total_popularity
+    SUM(popularity) AS total_popularity
 FROM movies
-WHERE CAST(release_year AS INTEGER) >= 2017
+WHERE release_year >= 2017
 GROUP BY genre
 ORDER BY total_popularity DESC
 LIMIT 10;
