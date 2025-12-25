@@ -65,9 +65,9 @@ The data is stored in the `movies` table with the following structure:
 |---------------|------|-------------|
 | title         | TEXT | Movie title |
 | genre         | TEXT | Individual genre (normalized) |
-| release_date  | TEXT | Full release date (ISO format) |
-| popularity    | TEXT | Popularity score (to be cast during aggregation) |
-| release_year  | TEXT | Extracted year for indexing/filtering |
+| release_date  | DATE | Full release date (ISO format) |
+| popularity    | REAL | Popularity score (to be cast during aggregation) |
+| release_year  | INTEGER | Extracted year for indexing/filtering |
 
 ---
 
