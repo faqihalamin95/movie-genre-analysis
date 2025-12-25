@@ -79,9 +79,9 @@ The data is stored in the `movies` table with the following structure:
 SELECT
     genre,
     COUNT(*) AS total_movies,
-    SUM(CAST(popularity AS REAL)) AS total_popularity
+    SUM(popularity) AS total_popularity
 FROM movies
-WHERE CAST(release_year AS INTEGER) >= 2017
+WHERE release_year >= 2017
 GROUP BY genre
 ORDER BY total_popularity DESC
 LIMIT 10;
